@@ -30,6 +30,7 @@ namespace _2025_ProyectoFInal_PuntoDeVenta
             this.Hide(); // Oculta el login
         }
 
+        // Método para registrar un nuevo usuario
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
             string nombre = txtNombre.Text;
