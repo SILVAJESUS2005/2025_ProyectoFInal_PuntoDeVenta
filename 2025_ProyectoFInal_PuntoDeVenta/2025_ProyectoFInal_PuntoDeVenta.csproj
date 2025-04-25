@@ -77,6 +77,7 @@
     <Compile Include="ConfiguracionForm.Designer.cs">
       <DependentUpon>ConfiguracionForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataGridViewNumericUpDownColumn.cs" />
     <Compile Include="InicioForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +131,9 @@
     <Content Include="Fonts\Dosis-Regular.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <EmbeddedResource Include="VentasForm.resx">
+      <DependentUpon>VentasForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="autocobro.db" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
