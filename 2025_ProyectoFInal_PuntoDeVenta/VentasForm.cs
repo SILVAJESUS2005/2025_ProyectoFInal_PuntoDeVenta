@@ -16,7 +16,7 @@ namespace _2025_ProyectoFInal_PuntoDeVenta
         public VentasForm()
         {
             InitializeComponent();
-        // Pruebas
+        }
         private void VentasForm_Load(object sender, EventArgs e)
         {
         
