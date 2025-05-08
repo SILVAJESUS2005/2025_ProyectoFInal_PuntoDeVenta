@@ -71,49 +71,49 @@
     <Compile Include="CircularProgressBar.Designer.cs">
       <DependentUpon>CircularProgressBar.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConfiguracionForm.cs">
+    <Compile Include="Isa\ConfiguracionForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConfiguracionForm.Designer.cs">
+    <Compile Include="Isa\ConfiguracionForm.Designer.cs">
       <DependentUpon>ConfiguracionForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DataGridViewNumericUpDownColumn.cs" />
-    <Compile Include="InicioForm.cs">
+    <Compile Include="Jesus\InicioForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InicioForm.Designer.cs">
+    <Compile Include="Jesus\InicioForm.Designer.cs">
       <DependentUpon>InicioForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginForm.cs">
+    <Compile Include="Jesus\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginForm.Designer.cs">
+    <Compile Include="Jesus\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RegistroForm.cs">
+    <Compile Include="Jesus\RegistroForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegistroForm.Designer.cs">
+    <Compile Include="Jesus\RegistroForm.Designer.cs">
       <DependentUpon>RegistroForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="VentasForm.cs">
+    <Compile Include="Brendy\VentasForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VentasForm.Designer.cs">
+    <Compile Include="Brendy\VentasForm.Designer.cs">
       <DependentUpon>VentasForm.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="CircularProgressBar.resx">
       <DependentUpon>CircularProgressBar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ConfiguracionForm.resx">
+    <EmbeddedResource Include="Isa\ConfiguracionForm.resx">
       <DependentUpon>ConfiguracionForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InicioForm.resx">
+    <EmbeddedResource Include="Jesus\InicioForm.resx">
       <DependentUpon>InicioForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginForm.resx">
+    <EmbeddedResource Include="Jesus\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -125,13 +125,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="RegistroForm.resx">
+    <EmbeddedResource Include="Jesus\RegistroForm.resx">
       <DependentUpon>RegistroForm.cs</DependentUpon>
     </EmbeddedResource>
     <Content Include="Fonts\Dosis-Regular.ttf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <EmbeddedResource Include="VentasForm.resx">
+    <EmbeddedResource Include="Brendy\VentasForm.resx">
       <DependentUpon>VentasForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="autocobro.db" />
@@ -148,6 +148,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Isaac\" />
+    <Folder Include="Karen\" />
+    <Folder Include="NewFolder1\" />
+    <Folder Include="Omar\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
