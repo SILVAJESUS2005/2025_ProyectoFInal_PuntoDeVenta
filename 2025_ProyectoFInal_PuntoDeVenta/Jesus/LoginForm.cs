@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Text;
 using System.Runtime.InteropServices;
+using System.IO;
 
 namespace _2025_ProyectoFInal_PuntoDeVenta
 {
@@ -51,7 +52,7 @@ namespace _2025_ProyectoFInal_PuntoDeVenta
             string contraseña = txtContraseña.Text;
 
             // Ruta de tu base de datos SQLite
-            string connectionString = "Data Source=C:\\Users\\Jesus\\source\\repos\\2025_ProyectoFInal_PuntoDeVenta\\2025_ProyectoFInal_PuntoDeVenta\\autocobro.db";
+            string connectionString = $"Data Source={Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "autocobro.db")}";
 
             using (SQLiteConnection conn = new SQLiteConnection(connectionString))
             {

@@ -134,7 +134,7 @@
     <EmbeddedResource Include="Brendy\VentasForm.resx">
       <DependentUpon>VentasForm.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="autocobro.db" />
+    <Content Include="autocobro.db" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
