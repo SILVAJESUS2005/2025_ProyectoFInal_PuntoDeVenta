@@ -64,7 +64,7 @@ namespace _2025_ProyectoFInal_PuntoDeVenta
                     cmd.Parameters.AddWithValue("@nombre", nombre);
                     cmd.Parameters.AddWithValue("@contraseña", contraseña);
 
-                    int count = Convert.ToInt32(cmd.ExecuteScalar());
+                    int count = Convert.ToInt32(cmd.ExecuteScalar()); //hola
 
                     if (count > 0)
                     {
