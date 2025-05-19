@@ -52,7 +52,9 @@ namespace _2025_ProyectoFInal_PuntoDeVenta
             string contraseña = txtContraseña.Text;
 
             // Ruta de tu base de datos SQLite
-            string connectionString = $"Data Source={Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "autocobro.db")}";
+            // string connectionString = $"Data Source={Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "autocobro.db")}";
+            string dbPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Database", "autocobro.db");
+            string connectionString = $"Data Source={dbPath}";
 
             using (SQLiteConnection conn = new SQLiteConnection(connectionString))
             {
@@ -82,6 +84,11 @@ namespace _2025_ProyectoFInal_PuntoDeVenta
                     }
                 }
             }
+        }
+
+        private void txtUsuario_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
     }

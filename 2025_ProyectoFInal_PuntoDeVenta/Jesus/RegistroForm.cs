@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SQLite;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -44,9 +45,11 @@ namespace _2025_ProyectoFInal_PuntoDeVenta
             }
 
             // Ruta de la base de datos (ajústala según dónde esté tu archivo .db)
-            string dbPath = @"C:\Users\Jesus\source\repos\2025_ProyectoFInal_PuntoDeVenta\2025_ProyectoFInal_PuntoDeVenta\autocobro.db";
-            string connectionString = $"Data Source={dbPath};Version=3;";
-
+            // string dbPath = @"C:\Users\Jesus\source\repos\2025_ProyectoFInal_PuntoDeVenta\2025_ProyectoFInal_PuntoDeVenta\autocobro.db";
+            // string connectionString = $"Data Source={dbPath};Version=3;";
+            string dbPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Database", "autocobro.db");
+            string connectionString = $"Data Source={dbPath}";
+            
             using (SQLiteConnection conn = new SQLiteConnection(connectionString))
             {
                 conn.Open();

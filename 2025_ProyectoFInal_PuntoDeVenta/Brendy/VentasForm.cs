@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SQLite;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SQLite;
 
 namespace _2025_ProyectoFInal_PuntoDeVenta
 {
@@ -28,7 +29,10 @@ namespace _2025_ProyectoFInal_PuntoDeVenta
         }
         private void cargarProductosDesdeDB()
         {
-            string connStr = "Data Source=C:\\Users\\Jesus\\source\\repos\\2025_ProyectoFInal_PuntoDeVenta\\2025_ProyectoFInal_PuntoDeVenta\\autocobro.db";
+            // string connStr = "Data Source=C:\\Users\\Jesus\\source\\repos\\2025_ProyectoFInal_PuntoDeVenta\\2025_ProyectoFInal_PuntoDeVenta\\autocobro.db";
+            string dbPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Database", "autocobro.db");
+            string connectionString = $"Data Source={dbPath}";
+            string connStr = connectionString; // Cambia esto a la ruta de tu base de datos SQLite
             using (var conn = new SQLiteConnection(connStr))
             {
                 conn.Open();

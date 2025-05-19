@@ -134,7 +134,9 @@
     <EmbeddedResource Include="Brendy\VentasForm.resx">
       <DependentUpon>VentasForm.cs</DependentUpon>
     </EmbeddedResource>
-    <Content Include="autocobro.db" />
+    <Content Include="Database\autocobro.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -152,7 +154,6 @@
   <ItemGroup>
     <Folder Include="Isaac\" />
     <Folder Include="Karen\" />
-    <Folder Include="NewFolder1\" />
     <Folder Include="Omar\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
